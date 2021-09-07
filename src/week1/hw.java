@@ -24,6 +24,7 @@ public class hw {
 
             //double workingHours= weeklyWorkingHours - standardWorkingHours;
             double weekdaysWorkingHours = weeklyWorkingHours - weekendWorkingHours; //how many hours did the employee work during weekdays??
+            double reducedWorkingHours = standardWorkingHours - weekdaysWorkingHours;
 
             if (weeklyWorkingHours >= 40) {
                 double extraWageWeekdays = unitWage * (weekdaysWorkingHours - standardWorkingHours) * 1.5; //For every hour worked on weekdays over 40 hours, 1.5 times the hourly unit wage is paid.
@@ -38,7 +39,7 @@ public class hw {
             }
             else if (weeklyWorkingHours < 40) {
                 double noExtraWageWeekdays = 0;
-                double reducedSalary = baseSalary - ((standardWorkingHours - weeklyWorkingHours) * unitWage);
+                double reducedSalary = baseSalary - (reducedWorkingHours*unitWage);
                 double extraWageWeekend = unitWage * weekendWorkingHours * 2; //For every hour worked on weekends over 40 hours(nonsense!!totally weekend has 48 hours!), 2 times the hourly unit wage is paid.
                 if (weekendWorkingHours > 0 && weekendWorkingHours < 10) {
                     double salary = reducedSalary + noExtraWageWeekdays + extraWageWeekend;
