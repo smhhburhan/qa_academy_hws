@@ -38,17 +38,18 @@ public class hw {
             }
             else if (weeklyWorkingHours < 40) {
                 double noExtraWageWeekdays = 0;
+                double reducedSalary = baseSalary - ((standardWorkingHours - weeklyWorkingHours) * unitWage);
                 double extraWageWeekend = unitWage * weekendWorkingHours * 2; //For every hour worked on weekends over 40 hours(nonsense!!totally weekend has 48 hours!), 2 times the hourly unit wage is paid.
                 if (weekendWorkingHours > 0 && weekendWorkingHours < 10) {
-                    double salary = baseSalary + noExtraWageWeekdays + extraWageWeekend;
+                    double salary = reducedSalary + noExtraWageWeekdays + extraWageWeekend;
                     System.out.println("Your total salary is" + " " + salary);
                 }
                 else if (weekendWorkingHours > 0 && weekendWorkingHours > 10) {//bonus is 500 euros if the employee has worked at least 40 hours during the week and more than 10 hours on the weekends.
-                    double salary = baseSalary + noExtraWageWeekdays + extraWageWeekend + 500;
+                    double salary = reducedSalary + noExtraWageWeekdays + extraWageWeekend + 500;
                     System.out.println("Your total salary is" + " " + salary);
                 }
                 else if (weekendWorkingHours == 0) {//If the employee has worked less than 40 hours, her/his salary should be reduced proportionally
-                    double salary = baseSalary - ((standardWorkingHours - weeklyWorkingHours) * unitWage);
+                    System.out.println("Your total salary is" + " " + reducedSalary);
                 }
             }
         }
