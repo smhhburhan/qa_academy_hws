@@ -30,10 +30,10 @@ public class hw {
                 double extraWageWeekend = unitWage * weekendWorkingHours * 2; //For every hour worked on weekends over 40 hours(nonsense!!totally weekend has 48 hours!), 2 times the hourly unit wage is paid.
                 if (weekendWorkingHours < 10) {
                     double salary = baseSalary + extraWageWeekdays + extraWageWeekend;
-                    System.out.println("Your total salary is" + salary);
+                    System.out.println("Your total salary is" + " " + salary);
                 } else if (weekendWorkingHours > 10) { //bonus is 500 euros if the employee has worked at least 40 hours during the week and more than 10 hours on the weekends.
                     double salary = baseSalary + extraWageWeekdays + extraWageWeekend + 500;
-                    System.out.println("Your total salary is" + salary);
+                    System.out.println("Your total salary is" + " " + salary);
                 }
             }
             else if (weeklyWorkingHours < 40) {
@@ -41,11 +41,11 @@ public class hw {
                 double extraWageWeekend = unitWage * weekendWorkingHours * 2; //For every hour worked on weekends over 40 hours(nonsense!!totally weekend has 48 hours!), 2 times the hourly unit wage is paid.
                 if (weekendWorkingHours > 0 && weekendWorkingHours < 10) {
                     double salary = baseSalary + noExtraWageWeekdays + extraWageWeekend;
-                    System.out.println("Your total salary is" + salary);
+                    System.out.println("Your total salary is" + " " + salary);
                 }
                 else if (weekendWorkingHours > 0 && weekendWorkingHours > 10) {//bonus is 500 euros if the employee has worked at least 40 hours during the week and more than 10 hours on the weekends.
                     double salary = baseSalary + noExtraWageWeekdays + extraWageWeekend + 500;
-                    System.out.println("Your total salary is" + salary);
+                    System.out.println("Your total salary is" + " " + salary);
                 }
                 else if (weekendWorkingHours == 0) {//If the employee has worked less than 40 hours, her/his salary should be reduced proportionally
                     double salary = baseSalary - ((standardWorkingHours - weeklyWorkingHours) * unitWage);
