@@ -52,6 +52,9 @@ public class hw {
                 }
             }
         }
+        else if (baseSalary<0){
+            System.out.println("Your base salary should not be negative!Please make sure, your base salary must be at least 1000 euros.");
+        }
         else
             System.out.println("Your base salary is out of range! Please make sure, your base salary must be at least 1000 euros.");
     }
