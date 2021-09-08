@@ -5,6 +5,7 @@
 # this is for self-improving
 
 #Homework
+
 We expect you to develop a weekly salary calculation program. We ask the user to get the base salary information, the total hours worked during the week and the total hours worked on the weekend. Here are some rules;
 
 Base salary must be at least 1000 euros.
