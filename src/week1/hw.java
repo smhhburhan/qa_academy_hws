@@ -34,7 +34,7 @@ public class hw {
                     System.out.println("Your total salary is" + " " + salary);
                 } else if (weekendWorkingHours >= 10) { //bonus is 500 euros if the employee has worked at least 40 hours during the week and more than 10 hours on the weekends.
                     double salary = baseSalary + extraWageWeekdays + extraWageWeekend + 500;
-                    System.out.println("Your total salary is" + " " + salary);
+                    System.out.println("Congratulations! You earned 500 euros bonus! Your total salary is" + " " + salary);
                 }
             }
             else if (weeklyWorkingHours < 40) {
