@@ -1,7 +1,7 @@
 package week1;
 import java.util.Scanner;
 //semih burhan - getir
-public class hw {
+public class weeklySalaryCalculation {
 
     public static void main(String[] args){
 
