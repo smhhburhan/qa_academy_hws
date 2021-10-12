@@ -20,6 +20,6 @@ public class Student extends Person{
             }
         }
         else
-            System.out.println("The maximum credit is 20 for each of student!");
+            System.out.println("Students can take maximum 20 credits!");
     }
 }

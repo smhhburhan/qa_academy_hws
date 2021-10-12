@@ -23,6 +23,6 @@ public class Courses {
             }
         }
         else
-            System.out.println("The maximum capacity of course is 20 students.");
+            System.out.println("A maximum of 20 students can register for a course.!");
     }
 }

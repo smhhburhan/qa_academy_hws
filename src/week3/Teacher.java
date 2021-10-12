@@ -17,6 +17,6 @@ public class Teacher extends Person{
             }
         }
         else
-            System.out.println("The maximum course number is 3 for each of teacher!");
+            System.out.println("Teachers can give maximum 3 courses!");
     }
 }
