@@ -2,4 +2,4 @@
 
 # semih burhan - senior software qa engineer at GETIR
 
-# this is for self-improving
+# this is for self-improvement
